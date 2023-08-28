@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import "dark_web.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 2%;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .logo img {
+    margin-right: 15px;
+    height: 40px;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links a {
+    font-size: 700;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: rgb(25, 0, 255);
+}
+
+
+
+.header .lupa input {
+    border: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 8px 60px;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    max-width: 300px;
+}
+
+.header .lupa img {
+    padding-left: 10px;
+    height: 25px;
+}
+
+.header .lupa input::placeholder {
+    color: white;
+}
+
+.header .lupa img:hover {
+    transform: scale(1.2);
+}
+
+.header .logo1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alineación a la derecha */
+    position: relative; /* Establecer como contexto de posicionamiento */
+}
+
+.header .logo1 img {
+    padding: 0 3px;
+    margin-right: 15px;
+    height: 40px;
+}
+
+.header .logo1 img:hover {
+    transform: scale(1.2);
+}
+
+.header .logo1 .campana-img{
+    position: absolute;
+    left: -5px;
+    top: 0; /* Ajusta según tu diseño */
+    right: 0; /* Ajusta según tu diseño */
+}
+.header .logo1 .cuadro-img{
+    position: absolute;
+    left: 60px;
+    top: 0; /* Ajusta según tu diseño */
+    right: 0; /* Ajusta según tu diseño */
+}
+.header .logo1 .acceso-img{
+    position: absolute;
+    top: 0; /* Ajusta según tu diseño */
+    right: 0; /* Ajusta según tu diseño */
+}
+/* Resto de tus estilos */
+
+.nav-links .xd a {
+    color: rgb(0, 0, 0);
+}
+
+
+.darkModeSwitch{
+    background: #072972de;
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.darkModeSwitch span{
+    width:30px;
+    height:15px;
+    line-height:30px;
+    display:block;
+    color:#fff;
+
+    background: none;
+}
+.darkModeSwitch::after{
+    display:block;
+    background: #072972de;
+    width: 1.9rem;
+    height: 1.9rem;
+    position: absolute;
+    top:-10;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    content: "";
+}
+.darkModeSwitch.active{
+  background: #030e2a;
+}
+.darkModeSwitch.active::after{
+  left:unset;
+  right:0;
+}
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-container {
+        display: none;
+    }
+    
+    .logo1 {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .logo1 img {
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1315px) {
+    .header .lupa,
+    .header .lupa-img {
+        display: none;
+    }
+}
+@media screen and (max-width: 950px) {
+    .header .lupa,
+    .header .lupa-img {
+        display: none;
+    }
+
+    .header .nav-links li {
+        display: none; /* Ocultar los elementos li en el menú */
+    }
+
+    .darkModeSwitch {
+        display: none;
+    }
+}

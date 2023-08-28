@@ -1,0 +1,34 @@
+body.dark {   background:  #ffffff; }
+body.dark .header {   background:#000000}
+body.dark .header .nav-links .xd a {   color:#fff}
+body.dark h1 {   color:#fff}
+body.dark .header .lupa input {   background:#ffffff}
+body.dark .header .lupa input::placeholder { color: black}
+body.dark .header .nav-links li a:hover { color: rgb(25, 0, 255);}
+
+body.dark .campana-img{ display: none;}
+body.dark .campana {
+    background: url('img/campana.png'); /* Cambiar la imagen de fondo */
+    width: 40px; /* Ajusta el tamaño de acuerdo a tu imagen */
+    height: 35px; /* Ajusta el tamaño de acuerdo a tu imagen */
+    background: no-repeat;
+}
+body.dark .cuadro-img{ display: none;}
+body.dark .cuadro {
+    background: url('img/cuadro.png'); /* Cambiar la imagen de fondo */
+    width: 40px; /* Ajusta el tamaño de acuerdo a tu imagen */
+    height: 35px; /* Ajusta el tamaño de acuerdo a tu imagen */
+    background: no-repeat;
+}
+body.dark .acceso-img{ display: none;}
+body.dark .acceso {
+    background: url('img/acceso.png'); /* Cambiar la imagen de fondo */
+    width: 40px; /* Ajusta el tamaño de acuerdo a tu imagen */
+    height: 35px; /* Ajusta el tamaño de acuerdo a tu imagen */
+    background: no-repeat;
+}
+body.dark .lupa-img{ display: none;}
+body.dark .lupa {
+    background: url('img/lupa.png'); /* Cambiar la imagen de fondo */
+    background: no-repeat;
+}
